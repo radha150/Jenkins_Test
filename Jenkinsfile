@@ -7,6 +7,9 @@ pipeline {
         stage('build') {
             steps {
                 sh 'python --version'
+                sh 'uptime'
+                sh 'hostname'
+                sh 'cat /etc/redhat-release'
             }
         }
     }
